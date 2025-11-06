@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros productos</title>
+  <style>
+    /* ESTILOS  */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #a36824;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #6b4e3d;
+      color: white;
+      padding: 20px;
+      margin: 0;
+    }
+
+    /*  CONTENEDOR DE PRODUCTOS */
+    .contenedor-productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /*  TARJETAS DE PRODUCTOS  */
+    .producto-card {
+      background-color: rgb(255, 255, 255);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      width: 220px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .producto-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /*  IMÁGENES */
+    .producto-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    /*  BOTONES  */
+    .producto-card button {
+      background-color: #6b4e3d;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .producto-card button:hover {
+      background-color: #8c6c56;
+    }
+  </style>
+</head>
+<body>
+    <h1>Nuestros productos</h1>
+    <div id="contenedor-productos" class="contenedor-productos"></div>
+    <script src="app.js"></script>
+</body>
+</html>
