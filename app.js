@@ -4,21 +4,21 @@ const productosJSON = [
         nombre: "Café Moca",
         precio: 70.00,
         descripcion: "Exquisito café con chocolate y crema",
-        imagen: "../p2/tazadeCafe.PNG"
+        imagen: "tazadeCafe.PNG"
       },
       {
         id: 2,
         nombre: "Té verde",
         precio: 50.00,
         descripcion: "Hoja de té verde",
-        imagen: "../P2/tazadete.PNG"
+        imagen: "tazadete.PNG"
       },
       {
         id: 3,
         nombre: "Smoothie de frutas",
         precio: 40.00,
         descripcion: "Mezcla de frutas naturales",
-        imagen: "../p2/smotiedefrutas.PNG"
+        imagen: "smotiedefrutas.PNG"
       }
     ];
 
@@ -43,4 +43,5 @@ const productosJSON = [
     }
 
     // Llamar a la función al cargar la página
+
     mostrarProductos();
